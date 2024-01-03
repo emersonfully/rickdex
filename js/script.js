@@ -15,16 +15,16 @@ const fetchData = () => {
     const lisCharacters = characters.reduce((accumulator, character) => {
       accumulator += `
       <li class="card">
-        <img class="card-image" src=${character.image}/>
+        <img class="card-image" src="${character.image}"/>
           <h2 class="card-title">${character.id} - ${character.name}</h2>
           <p>${character.status}</p>
       </li>`
       return accumulator
     }, '')
-
+    
     const ul = document.querySelector('[data-js="rickdex"]')
 
-    console.log(lisCharacters)
+    ul.innerHTML = lisCharacters
   });
 };
 
