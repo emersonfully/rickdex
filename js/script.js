@@ -17,7 +17,10 @@ const fetchData = () => {
       <li class="card">
         <img class="card-image" src="${character.image}"/>
           <h2 class="card-title">${character.id} - ${character.name}</h2>
-          <p>${character.status}</p>
+          <p class="card-subtitle">${character.status}</p>
+          <p class="card-subtitle">${character.origin.name}</p>
+          <p class="card-subtitle">${character.location.name}</p>
+          <p class="card-subtitle">${character.species}</p>
       </li>`
       return accumulator
     }, '')
