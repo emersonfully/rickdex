@@ -38,7 +38,7 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: rgb(125, 231, 111);
+  background-color: rgba(125, 231, 111, 0.705);
   opacity: 0.7;
   position: absolute;
   top: 0%;
@@ -64,6 +64,18 @@ h1 {
   font-weight: lighter;
   position: relative;
   z-index: 2;
+}
+
+.card-subtitle.alive {
+  color: rgb(0, 194, 0);
+}
+
+.card-subtitle.dead {
+  color: red;
+}
+
+.card-subtitle.unknown {
+  color: black;
 }
 
 .card-image {
